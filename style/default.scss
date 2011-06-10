@@ -1,0 +1,75 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "susy";
+
+/* misc */
+
+@import "widgets";
+
+$padding: 8px;
+$bright-text: #ccc;
+$normal-text: #777;
+$dark-text: #333;
+$inovex-logo: "/images/inovex_logo_square.png";
+
+a {
+  color: $normal-text;
+  text-decoration: none;
+  
+  &:hover {
+   color: red;
+  }
+}
+
+/* susy grid */
+$total-cols: 12;
+$col-width: 7.5%;
+$gutter-width: 0%;
+$side-gutter-width: 5%;
+
+.container {
+  @include container;
+  
+  .first { @include alpha; }
+  .last { @include omega; }
+  .col4 {
+    @include columns(3);
+  }
+  .col3 {
+    @include columns(4);
+  }
+  .col2 {
+    @include columns(6);
+  }
+  .col1 {
+    @include full;
+    text-align: center;
+  }
+  
+  * {
+    font-family: "Lucida Grande";
+  }
+}
+.slideshow {
+  @include container;
+  .first { @include alpha; }
+  .last { @include omega; }
+  li {
+    @include columns(3);
+    text-align: center;
+  }
+}
+
+.bright-bg {
+  background: #ddd;
+}
+
+.dark-bg {
+  background: lighten(#4D191A, 10%);
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #fff;
+  padding: $padding;
+}

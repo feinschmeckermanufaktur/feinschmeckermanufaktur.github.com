@@ -1,0 +1,31 @@
+.clear {
+  clear: both;
+}
+
+@mixin horizontal-navigation {
+  li {
+    display: inline;
+    a {
+      display: inline-block;
+    }
+  }  
+}
+
+@mixin border-radius($lt, $rt, $lb, $rb) {
+  -webkit-border-radius: $lt $rt $lb $rb;
+}
+
+@mixin vertical-background-gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+}
+
+@mixin box-shadow($args) {
+  -webkit-box-shadow: $args;
+}
+
+// hide but enable screen readers to show the text
+@mixin readable-hide() {
+  position: absolute;
+  margin-left: -9999em;
+  overflow: hidden;
+}
