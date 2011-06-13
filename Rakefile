@@ -9,6 +9,11 @@ task "server" do
 end
 
 desc "watch all stylesheet files an compile changes"
-task "styles:watch" do
-  sh "compass watch"
+task "style:watch" do
+  sh "bundle exec compass watch"
+end
+
+desc "autoreload browser page"
+task "reload" do
+  sh "guard"
 end
