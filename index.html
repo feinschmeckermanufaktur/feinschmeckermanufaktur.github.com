@@ -17,39 +17,25 @@ layout: default
 
 <div class="container slideshow">
   <div class="col1">
-    <ul>
-      <li><img src="/images/slideshow/1.jpg" /></li>
-      <li><img src="/images/slideshow/2.jpg" /></li>
-      <li><img src="/images/slideshow/3.jpg" /></li>
-      <li><img src="/images/slideshow/4.jpg" /></li>
-      <li><img src="/images/slideshow/2.jpg" /></li>
-    </ul>
+    {% include slideshow.html %}
   </div>
 </div>
 
 <div class="container slices">
   <div class="col3 first">
-    <h1>Idee</h1>
-    <p>Was haben gem&uuml;tliche Abende [...] kulinarische Erlebnisse und interessante Gespr&auml;che [...] bei einem Glas trifft man sich [...]</p>
+    {% include idee.html %}
   </div>
   <div class="col3">
-    <h1>Location</h1>
-    <p>Die alte M&uuml;hle in Niederhofen ist eine [...] in dem alten Gem&auml;er [...] tolle Abende im fabelhaften Ambiente [...]</p>
+    {% include location.html %}
   </div>
   <div class="col3 last">
-    <h1>Team</h1>
-    <p>Kalle Kohl und Paul Panzer auf der Suche nach dem heiligen Gral [...] wer wenn nicht die beiden [...] bringen das Kennenerleben und Erleben von erlesenen Tropfen auf ein neues Level [...]</p>
+    {% include philosophie.html %}
   </div>
 </div>
 
 <div class="container footer">
   <div class="col1">
-    <h1>Kontakt herstellen und informieren</h1>
-    <p>
-      Feinschmecker Manufaktur
-      Schwaigern-Niederhofen
-      <a href="mailto:info@feinschmeckermanufaktur.tld">info@feinschmeckermanufaktur.tld</a>
-    </p>
+    {% include kontakt.html %}
   </div>
 </div>
 

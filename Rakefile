@@ -9,7 +9,7 @@ task "server" do
 end
 
 desc "watch all stylesheet files an compile changes"
-task "style:watch" do
+task "style" do
   sh "bundle exec compass watch"
 end
 

@@ -133,11 +133,13 @@ $side-gutter-width: 12.5%;
 }
 
 .next-event {
+  position: fixed;
+  right: 20px;
   .line {
     float: right;
     margin-bottom: ($header-height - $header-line-height - $padding);
-
-    @include box-shadow(#000 1px 1px 3px);
+    
+    @include box-shadow(#333 1px 1px 3px);
     @include transition-duration(0.5s);
     @include transition-property(all);
     

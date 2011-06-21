@@ -3,11 +3,27 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    {% include header/meta.html %}
+    <title>{{ site.title }}</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="" />
+    <meta name="author" content="{{ site.authors }}" />
+    <meta name="keywords" content="inovex" />
+    <meta name="date" content="{{ site.time | date_to_xmlschema }}" />
+    <meta http-equiv="Content-language" content="de" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/default.css" />
   </head>
   <body>
-    {% include header/header.html %}
+    <div class="container header">
+      <div class="col2 first">
+        <img src="/images/logo.png" />
+      </div>
+      <div class="col2 last next-event">
+        <div class="line">
+          {% include next-event.html %}
+        </div>
+      </div>
+    </div>
     {{ content }}
   </body>
 </html>
