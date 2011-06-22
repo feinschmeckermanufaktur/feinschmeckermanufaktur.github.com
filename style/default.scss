@@ -2,7 +2,6 @@
 
 @import "compass/reset";
 @import "compass/css3";
-@import "susy";
 
 /* libs */
 
@@ -14,9 +13,9 @@
 $col1: #000;
 $col2: #E9B800;
 
-$col1-ultradark: darken($col1, 10%);
-$col1-superdark: $col1;
-$col1-dark: lighten($col1, 5%);
+$col1-ultradark: $col1;
+$col1-superdark: lighten($col1, 5%);
+$col1-dark: lighten($col1, 10%);
 $col1-semidark: lighten($col1, 15%);
 $col1-normal: lighten($col1, 20%);
 $col1-semibright: lighten($col1, 30%);
@@ -24,6 +23,7 @@ $col1-bright: lighten($col1, 35%);
 $col1-superbright: lighten($col1, 40%);
 $col1-ultrabright: lighten($col1, 45%);
 
+$col2-dark: darken($col2, 10%);
 $col2-normal: $col2;
 $col2-semibright: lighten($col2, 10%);
 $col2-bright: lighten($col2, 35%);
@@ -40,8 +40,6 @@ $padding: 16px;
 $bright-text: #ccc;
 $normal-text: #777;
 $dark-text: #333;
-$banner-img: "/images/banner.png";
-
 a {
   color: $normal-text;
   text-decoration: none;
@@ -53,89 +51,50 @@ a {
 
 body {
   background: #000;
-}
-
-/* susy grid */
-$total-cols: 12;
-$col-width: 6.25%;
-$gutter-width: 0%;
-$side-gutter-width: 12.5%;
-
-.container {
-  @include container;
-  background: #fff;
-  
-  .first { @include alpha; }
-  .last { @include omega; }
-  
-  .col6 {
-    @include columns(2);
-  }
-  .col4 {
-    @include columns(3);
-  }
-  .col3, .col62 {
-    @include columns(4);
-  }
-  .col2, .col42, .col63 {
-    @include columns(6);
-  }
-  .col32, .col64 {
-    @include columns(8);
-  }
-  .col1 {
-    @include full;
-  }
-  
   * {
     font-family: "Lucida Grande";
   }
 }
 
-
 .header {
-  background: url($banner-img) center bottom;
-  .first {
+  @include background(image-url('banner.png') no-repeat center bottom);
+  height: $header-height;
+  .logo-container {
+    margin-left: 20%;
     height: $header-height;
     img {
       margin-top: ($header-height - $logo-height);
     }
+    display: inline-block;
   }
-  .last {
-    height: $header-height;
+  .next-event-container {
+    float: right;
   }
 }
 
 .intro {
-  h1 {
-    font-size: 2.5em;
-    margin: $padding*3 0 $padding 0;
-  }
-  blockquote {
-    @include text-shadow(#fff 0 1px 1px);
-    @include box-shadow(#ccc 1px 1px 3px);
-    padding: $padding;
-    @include background-image(linear-gradient(color-stops(#f9f9f9 0%, #eee 100%)));
-    background-image: url('/images/quote.png') no-repeat top left;  
-  }
+  @include simple-block;
+  @include linear-gradient(#ddd, #fff);
+  padding-bottom: $padding;
   p {
-    margin: $padding 0 $padding 0;
     &.authors {
       @include rotate(-2deg);
       text-align: right;
+      font-weight: bold;
     }
   }
+  border-bottom: 1px solid #ccc;
 }
 
 .slideshow {
+  @include background-image(linear-gradient($col2-bright, $col2-ultrabright));
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   text-align: center;
   ul {
-    background: $col2-ultrabright;
-    @include border-radius(3px 3px);
-    @include box-shadow(#999 1px 1px 3px);
     li {
       display: inline-block;
-      margin: $padding/2 0 $padding/2 $padding/2;
+      margin: $padding 0 $padding $padding/2;
       img {
         @include border-radius(3px 3px);
       }
@@ -143,57 +102,59 @@ $side-gutter-width: 12.5%;
   }
 }
 
-.next-event {
+.location {
+  border-top: 1px solid #ccc;
+  @include simple-block;
+  border-bottom: 1px solid #ccc;
+}
+
+.philosophie {
+  @include simple-block;
+}
+
+#next-event {
   position: fixed;
   right: 20px;
-  .line {
-    float: right;
-    margin-bottom: ($header-height - $header-line-height - $padding);
+
+  cursor: pointer;
     
-    @include box-shadow(#333 1px 1px 3px);
+  @include box-shadow(#333 1px 1px 3px);
+    
+  &, & * {
     @include transition-duration(0.5s);
     @include transition-property(all);
-    
-    @include border-radius(0 0 3px 3px);
-    padding: $padding/3;
-    
+  }
+  
+  @include border-radius(0 0 3px 3px);
+  padding: $padding/3;
+  
+  h1 {
+    color: #000;
+  }
+  a {
+    color: #fff;
+    @include text-shadow(rgba(#000, 0.9) 1px 1px 2px);
+  }
+  &.down {
+    background: #000;
+    h1 {
+      color: #ccc;
+    }
+  }
+  &:hover {
+    background: $col2-normal;
+    color: #000;
     h1 {
       color: #000;
     }
-    a {
-      color: #fff;
-      @include text-shadow(rgba(#000, 0.9) 1px 1px 2px);
-    }
-    &:hover {
-      background: $col2-normal;
-      color: #000;
-    }
-  }
-}
-
-.dark-bg {
-  @include box-shadow(inset #333 0 0 10px);
-  @include linear-gradient(color-stops($col1-semidark, $col1-normal));
-}
-
-p { color: #999; }
-
-.slices {
-  h1 {
-    margin: 3*$padding 0 1*$padding 0;
-    font-size: 1.5em;
-  }
-  p {
-    margin: 1*$padding 0 3*$padding 0;
   }
 }
 
 .footer {
-  @include box-shadow(inset #000 0 5px 30px);
-  background: $col1-ultradark;
-  
+  background: $col1-superdark;
+  padding: $padding 20% 2*$padding 20%;
   h1 {
-    margin: 2*$padding 0 $padding 0;
+    margin: $padding 0 $padding 0;
     font-size: 1.5em;
     color: $col1-normal;
     @include text-shadow(rgba(#000, 0.9) 1px 1px 0);
@@ -201,12 +162,23 @@ p { color: #999; }
   }
   p {
     color: $col1-superbright;
-    margin: 0 0 4*$padding 0;
+    margin: 0 0 $padding 0;
   }
   a {
     color: $col1-normal;
     &:hover {
-      color: $col1-dark;
+      color: $col1-bright;
     }
+  }
+}
+
+.copyright {
+  background: $col1-ultradark;
+  padding: $padding 20%;
+  border-top: 1px solid $col1-dark;
+  p {
+    text-align: center;
+    font-size: 0.9em;
+    color: $col1-normal;
   }
 }

@@ -25,3 +25,32 @@
     float: left;
   }
 }
+
+@mixin simple-block {
+  background: #fff;
+  padding: 3*$padding 20%;
+  h1 {
+    font-size: 2.5em;
+    @include text-shadow(#fff 0 1px 1px);
+    margin: 0 0 $padding 0;
+  }
+  blockquote {
+    @include text-shadow(#fff 0 1px 1px);
+    @include box-shadow(#ccc 0 1px 3px);
+    @include border-radius(3px);
+    padding: 1.5*$padding 1.5*$padding 1.5*$padding 3*$padding;
+    background: #fff;
+    font-size: 1.3em;
+    color: #333;
+    @include background(
+      image-url("quotes.png") no-repeat 0 $padding,
+      linear-gradient(#fff, #eee)
+    );
+  }
+  p {
+    @include text-shadow(#fff 0 1px 1px);
+    margin: $padding 0 $padding 0;
+    line-height: 1.1em;
+    color: #666;
+  }
+}

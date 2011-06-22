@@ -2,16 +2,8 @@
 layout: default
 ---
 
-<div class="container intro">
-  <div class="col6 first">
-    &nbsp;
-  </div>
-  <div class="col64">
-    {% include idee.html %}
-  </div>
-  <div class="col6 last">
-    &nbsp;
-  </div>
+<div class="intro">
+  {% include idee.html %}
 </div>
 
 <div class="container slideshow">
@@ -20,18 +12,10 @@ layout: default
   </div>
 </div>
 
-<div class="container slices">
-  <div class="col2 first">
-    {% include location.html %}
-  </div>
-  <div class="col2 last">
-    {% include philosophie.html %}
-  </div>
+<div class="location">
+ {% include location.html %}
 </div>
 
-<div class="container footer">
-  <div class="col1">
-    {% include kontakt.html %}
-  </div>
+<div class="philosophie">
+ {% include philosophie.html %}
 </div>
-

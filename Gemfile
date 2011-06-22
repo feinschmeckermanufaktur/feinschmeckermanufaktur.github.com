@@ -17,7 +17,4 @@ end
 group :style do
   gem "compass"
   gem "sass"
-  
-  # layouting
-  gem "compass-susy-plugin", :require => "susy"
 end
