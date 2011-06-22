@@ -111,8 +111,19 @@ $side-gutter-width: 12.5%;
     font-size: 2.5em;
     margin: $padding*3 0 $padding 0;
   }
+  blockquote {
+    @include text-shadow(#fff 0 1px 1px);
+    @include box-shadow(#ccc 1px 1px 3px);
+    padding: $padding;
+    @include background-image(linear-gradient(color-stops(#f9f9f9 0%, #eee 100%)));
+    background-image: url('/images/quote.png') no-repeat top left;  
+  }
   p {
-    margin: $padding 0 $padding*3 0;
+    margin: $padding 0 $padding 0;
+    &.authors {
+      @include rotate(-2deg);
+      text-align: right;
+    }
   }
 }
 
