@@ -3,6 +3,8 @@
 @import "compass/reset";
 @import "compass/css3";
 
+@import "bxslider";
+
 /* libs */
 
 @import "widgets";
@@ -86,17 +88,19 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-.slideshow {
+.slideshow-container {
   @include background-image(linear-gradient($col2-bright, $col2-ultrabright));
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   text-align: center;
-  ul {
+  #slideshow {
     li {
       display: inline-block;
       margin: $padding 0 $padding $padding/2;
       img {
         @include border-radius(3px 3px);
+        width: 200px;
+        height: 150px;
       }
     }
   }

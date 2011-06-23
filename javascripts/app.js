@@ -23,5 +23,10 @@ jQuery(document).ready(function(){
       jQuery('#next-event').removeClass('down');
     }
   });
+  
+  jQuery('#slideshow').bxSlider({
+    displaySlideQty: 3,
+    moveSlideQty: 1
+  });
 
 });
