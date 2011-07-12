@@ -1,0 +1,103 @@
+/* line 1, ../style/bxslider.scss */
+.bx-next {
+  position: absolute;
+  top: 40%;
+  right: -50px;
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  text-indent: -999999px;
+  background: url('../images/bxslider/gray_next.png') no-repeat 0 -30px;
+}
+
+/*previous button*/
+/* line 13, ../style/bxslider.scss */
+.bx-prev {
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  text-indent: -999999px;
+  background: url('../images/bxslider/gray_prev.png') no-repeat 0 -30px;
+}
+
+/*pager links*/
+/* line 25, ../style/bxslider.scss */
+.bx-pager a {
+  margin-right: 5px;
+  color: #fff;
+  padding: 3px 8px 3px 6px;
+  font-size: 12px;
+  zoom: 1;
+  background: url('../images/bxslider/gray_pager.png') no-repeat 0 -20px;
+}
+
+/*auto start button*/
+/* line 35, ../style/bxslider.scss */
+.bx-auto .start {
+  background: url('../images/bxslider/gray_auto.png') no-repeat 0 2px;
+  padding-left: 13px;
+}
+
+/*auto stop button*/
+/* line 41, ../style/bxslider.scss */
+.bx-auto .stop {
+  background: url('../images/gray_auto.png') no-repeat 0 -14px;
+  padding-left: 13px;
+}
+
+/*
+ * End color scheme styles
+ */
+/*next/prev button hover state*/
+/* line 53, ../style/bxslider.scss */
+.bx-next:hover,
+.bx-prev:hover {
+  background-position: 0 0;
+}
+
+/*pager links hover and active states*/
+/* line 59, ../style/bxslider.scss */
+.bx-pager .pager-active,
+.bx-pager a:hover {
+  background-position: 0 0;
+}
+
+/*pager wrapper*/
+/* line 64, ../style/bxslider.scss */
+.bx-pager {
+  text-align: center;
+  padding-top: 7px;
+  font-size: 12px;
+  color: #666;
+}
+
+/*captions*/
+/* line 72, ../style/bxslider.scss */
+.bx-captions {
+  text-align: center;
+  font-size: 12px;
+  padding: 7px 0;
+  color: #666;
+}
+
+/*auto controls*/
+/* line 80, ../style/bxslider.scss */
+.bx-auto {
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* line 85, ../style/bxslider.scss */
+.bx-auto a {
+  color: #666;
+  font-size: 12px;
+}
+
+/* line 90, ../style/bxslider.scss */
+.bx-wrapper {
+  margin-left: 50%;
+  left: -300px;
+}

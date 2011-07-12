@@ -1,0 +1,490 @@
+/* vendor */
+/* line 17, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../.rvm/gems/ruby-1.8.7-p330/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 1, ../style/bxslider.scss */
+.bx-next {
+  position: absolute;
+  top: 40%;
+  right: -50px;
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  text-indent: -999999px;
+  background: url('../images/bxslider/gray_next.png') no-repeat 0 -30px;
+}
+
+/*previous button*/
+/* line 13, ../style/bxslider.scss */
+.bx-prev {
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  text-indent: -999999px;
+  background: url('../images/bxslider/gray_prev.png') no-repeat 0 -30px;
+}
+
+/*pager links*/
+/* line 25, ../style/bxslider.scss */
+.bx-pager a {
+  margin-right: 5px;
+  color: #fff;
+  padding: 3px 8px 3px 6px;
+  font-size: 12px;
+  zoom: 1;
+  background: url('../images/bxslider/gray_pager.png') no-repeat 0 -20px;
+}
+
+/*auto start button*/
+/* line 35, ../style/bxslider.scss */
+.bx-auto .start {
+  background: url('../images/bxslider/gray_auto.png') no-repeat 0 2px;
+  padding-left: 13px;
+}
+
+/*auto stop button*/
+/* line 41, ../style/bxslider.scss */
+.bx-auto .stop {
+  background: url('../images/gray_auto.png') no-repeat 0 -14px;
+  padding-left: 13px;
+}
+
+/*
+ * End color scheme styles
+ */
+/*next/prev button hover state*/
+/* line 53, ../style/bxslider.scss */
+.bx-next:hover,
+.bx-prev:hover {
+  background-position: 0 0;
+}
+
+/*pager links hover and active states*/
+/* line 59, ../style/bxslider.scss */
+.bx-pager .pager-active,
+.bx-pager a:hover {
+  background-position: 0 0;
+}
+
+/*pager wrapper*/
+/* line 64, ../style/bxslider.scss */
+.bx-pager {
+  text-align: center;
+  padding-top: 7px;
+  font-size: 12px;
+  color: #666;
+}
+
+/*captions*/
+/* line 72, ../style/bxslider.scss */
+.bx-captions {
+  text-align: center;
+  font-size: 12px;
+  padding: 7px 0;
+  color: #666;
+}
+
+/*auto controls*/
+/* line 80, ../style/bxslider.scss */
+.bx-auto {
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* line 85, ../style/bxslider.scss */
+.bx-auto a {
+  color: #666;
+  font-size: 12px;
+}
+
+/* line 90, ../style/bxslider.scss */
+.bx-wrapper {
+  margin-left: 50%;
+  left: -300px;
+}
+
+/* libs */
+/* line 1, ../style/widgets.scss */
+.clear {
+  clear: both;
+}
+
+/* cols */
+/* layout-settings */
+/* line 45, ../style/default.scss */
+a {
+  color: #777777;
+  text-decoration: none;
+}
+/* line 49, ../style/default.scss */
+a:hover {
+  color: red;
+}
+
+/* line 54, ../style/default.scss */
+body {
+  background: #000;
+}
+/* line 56, ../style/default.scss */
+body * {
+  font-family: "Lucida Grande";
+}
+
+/* line 61, ../style/default.scss */
+.header {
+  background: url('../images/banner.png') no-repeat center bottom;
+  height: 200px;
+}
+/* line 64, ../style/default.scss */
+.header .logo-container {
+  margin-left: 20%;
+  height: 200px;
+  display: inline-block;
+}
+/* line 67, ../style/default.scss */
+.header .logo-container img {
+  margin-top: 50px;
+}
+/* line 72, ../style/default.scss */
+.header .next-event-container {
+  float: right;
+}
+
+/* line 77, ../style/default.scss */
+.intro {
+  background: #fff;
+  padding: 48px 20%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+  background-image: -moz-linear-gradient(#ffffff, #dddddd);
+  background-image: -o-linear-gradient(#ffffff, #dddddd);
+  background-image: -ms-linear-gradient(#ffffff, #dddddd);
+  background-image: linear-gradient(#ffffff, #dddddd);
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 32, ../style/widgets.scss */
+.intro h1 {
+  font-size: 2.5em;
+  text-shadow: white 0 1px 1px;
+  margin: 0 0 16px 0;
+}
+/* line 37, ../style/widgets.scss */
+.intro blockquote {
+  text-shadow: white 0 1px 1px;
+  -moz-box-shadow: #cccccc 0 1px 3px;
+  -webkit-box-shadow: #cccccc 0 1px 3px;
+  -o-box-shadow: #cccccc 0 1px 3px;
+  box-shadow: #cccccc 0 1px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  padding: 24px 24px 24px 48px;
+  background: #fff;
+  font-size: 1.3em;
+  color: #333;
+  background: url('../images/quotes.png') no-repeat 0 16px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
+  background: url('../images/quotes.png') no-repeat 0 16px, -webkit-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -moz-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -o-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -ms-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, linear-gradient(#ffffff, #eeeeee);
+}
+/* line 50, ../style/widgets.scss */
+.intro p {
+  text-shadow: white 0 1px 1px;
+  margin: 16px 0 16px 0;
+  line-height: 1.1em;
+  color: #666;
+}
+/* line 82, ../style/default.scss */
+.intro p.authors {
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  text-align: right;
+  font-weight: bold;
+}
+
+/* line 91, ../style/default.scss */
+.slideshow-container {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffea9d), color-stop(100%, #fff5d0));
+  background-image: -webkit-linear-gradient(#ffea9d, #fff5d0);
+  background-image: -moz-linear-gradient(#ffea9d, #fff5d0);
+  background-image: -o-linear-gradient(#ffea9d, #fff5d0);
+  background-image: -ms-linear-gradient(#ffea9d, #fff5d0);
+  background-image: linear-gradient(#ffea9d, #fff5d0);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+/* line 97, ../style/default.scss */
+.slideshow-container #slideshow li {
+  display: inline-block;
+  margin: 16px 0 16px 8px;
+}
+/* line 100, ../style/default.scss */
+.slideshow-container #slideshow li img {
+  -moz-border-radius: 3px 3px;
+  -webkit-border-radius: 3px 3px;
+  -o-border-radius: 3px 3px;
+  -ms-border-radius: 3px 3px;
+  -khtml-border-radius: 3px 3px;
+  border-radius: 3px 3px;
+  width: 200px;
+  height: 150px;
+}
+
+/* line 109, ../style/default.scss */
+.location {
+  border-top: 1px solid #ccc;
+  background: #fff;
+  padding: 48px 20%;
+  border-bottom: 1px solid #ccc;
+}
+/* line 32, ../style/widgets.scss */
+.location h1 {
+  font-size: 2.5em;
+  text-shadow: white 0 1px 1px;
+  margin: 0 0 16px 0;
+}
+/* line 37, ../style/widgets.scss */
+.location blockquote {
+  text-shadow: white 0 1px 1px;
+  -moz-box-shadow: #cccccc 0 1px 3px;
+  -webkit-box-shadow: #cccccc 0 1px 3px;
+  -o-box-shadow: #cccccc 0 1px 3px;
+  box-shadow: #cccccc 0 1px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  padding: 24px 24px 24px 48px;
+  background: #fff;
+  font-size: 1.3em;
+  color: #333;
+  background: url('../images/quotes.png') no-repeat 0 16px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
+  background: url('../images/quotes.png') no-repeat 0 16px, -webkit-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -moz-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -o-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -ms-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, linear-gradient(#ffffff, #eeeeee);
+}
+/* line 50, ../style/widgets.scss */
+.location p {
+  text-shadow: white 0 1px 1px;
+  margin: 16px 0 16px 0;
+  line-height: 1.1em;
+  color: #666;
+}
+
+/* line 115, ../style/default.scss */
+.philosophie {
+  background: #fff;
+  padding: 48px 20%;
+}
+/* line 32, ../style/widgets.scss */
+.philosophie h1 {
+  font-size: 2.5em;
+  text-shadow: white 0 1px 1px;
+  margin: 0 0 16px 0;
+}
+/* line 37, ../style/widgets.scss */
+.philosophie blockquote {
+  text-shadow: white 0 1px 1px;
+  -moz-box-shadow: #cccccc 0 1px 3px;
+  -webkit-box-shadow: #cccccc 0 1px 3px;
+  -o-box-shadow: #cccccc 0 1px 3px;
+  box-shadow: #cccccc 0 1px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  padding: 24px 24px 24px 48px;
+  background: #fff;
+  font-size: 1.3em;
+  color: #333;
+  background: url('../images/quotes.png') no-repeat 0 16px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
+  background: url('../images/quotes.png') no-repeat 0 16px, -webkit-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -moz-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -o-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, -ms-linear-gradient(#ffffff, #eeeeee);
+  background: url('../images/quotes.png') no-repeat 0 16px, linear-gradient(#ffffff, #eeeeee);
+}
+/* line 50, ../style/widgets.scss */
+.philosophie p {
+  text-shadow: white 0 1px 1px;
+  margin: 16px 0 16px 0;
+  line-height: 1.1em;
+  color: #666;
+}
+
+/* line 119, ../style/default.scss */
+#next-event {
+  position: fixed;
+  right: 20px;
+  cursor: pointer;
+  -moz-box-shadow: #333333 1px 1px 3px;
+  -webkit-box-shadow: #333333 1px 1px 3px;
+  -o-box-shadow: #333333 1px 1px 3px;
+  box-shadow: #333333 1px 1px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -khtml-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  padding: 5.333px;
+}
+/* line 127, ../style/default.scss */
+#next-event, #next-event * {
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+}
+/* line 135, ../style/default.scss */
+#next-event h1 {
+  color: #000;
+}
+/* line 138, ../style/default.scss */
+#next-event a {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 2px;
+}
+/* line 142, ../style/default.scss */
+#next-event.down {
+  background: #000;
+}
+/* line 144, ../style/default.scss */
+#next-event.down h1 {
+  color: #ccc;
+}
+/* line 148, ../style/default.scss */
+#next-event:hover {
+  background: #e9b800;
+  color: #000;
+}
+/* line 151, ../style/default.scss */
+#next-event:hover h1 {
+  color: #000;
+}
+
+/* line 157, ../style/default.scss */
+.footer {
+  background: #0d0d0d;
+  padding: 16px 20% 32px 20%;
+}
+/* line 160, ../style/default.scss */
+.footer h1 {
+  margin: 16px 0 16px 0;
+  font-size: 1.5em;
+  color: #333333;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 0;
+  display: inline-block;
+}
+/* line 167, ../style/default.scss */
+.footer p {
+  color: #666666;
+  margin: 0 0 16px 0;
+}
+/* line 171, ../style/default.scss */
+.footer a {
+  color: #333333;
+}
+/* line 173, ../style/default.scss */
+.footer a:hover {
+  color: #595959;
+}
+
+/* line 179, ../style/default.scss */
+.copyright {
+  background: black;
+  padding: 16px 20%;
+  border-top: 1px solid #1a1a1a;
+}
+/* line 183, ../style/default.scss */
+.copyright p {
+  text-align: center;
+  font-size: 0.9em;
+  color: #333333;
+}
